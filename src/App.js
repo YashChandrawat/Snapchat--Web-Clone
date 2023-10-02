@@ -8,12 +8,14 @@ import Preview from "./Preview";
 function App() {
   return (
     <div className="App">
-      <Routes>
-        <Route exact path="/" element={<WebCamCapture />} />
-        <Route path="/preview" element={<Preview />} />
+      <div className="app-body">
+        <Routes>
+          <Route exact path="/" element={<WebCamCapture />} />
+          <Route path="/preview" element={<Preview />} />
 
-        {/* Define other routes here */}
-      </Routes>
+          {/* Define other routes here */}
+        </Routes>
+      </div>
     </div>
   );
 }

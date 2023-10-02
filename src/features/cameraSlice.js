@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+
 const initialState = {
   value: 0,
   cameraImg : null
@@ -20,7 +21,7 @@ export const cameraSlice = createSlice({
   },
 });
 
-export const { setCameraImg } = cameraSlice.actions;
+export const { setCameraImg , resetCameraImg} = cameraSlice.actions;
 
 export const selectCameraImg = (state) => state.camera.cameraImg;
 
